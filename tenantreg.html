@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto smooth-scroll">
             <li class="nav-item">
-              <a class="nav-link mr-5 text-info" href="index.php">Home
+              <a class="nav-link mr-5 text-info" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -40,10 +40,10 @@
               <a class="nav-link" href="#opinions" data-offset="30">Login</a>
             </li> -->
             <li class="nav-item">
-                    <a class="nav-link mr-5 text-info" href="dashboard.php" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm" id="modal">Login</a>
+                    <a class="nav-link mr-5 text-info" href="dashboard.html" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm" id="modal">Login</a>
             </li>
             <li class="nav-item mr-5">
-              <a class="nav-link text-info" href="dashboard.php" data-offset="90">Dashboard</a>
+              <a class="nav-link text-info" href="dashboard.html" data-offset="90">Dashboard</a>
             </li>
             <li class="nav-item mr-5">
               <a class="nav-link  text-info" href="#contact" data-offset="90">Contact Us</a>
@@ -60,10 +60,13 @@
           <h1 class="text-center mb-3">REGISTER</h1>
       
           <form name="getstarted" action="" method="post" enctype="multipart/form-data">
+
+            <fieldset  class="p-3 mt-5"> 
+              <legend>Personal Information</legend>
             <div class="row">
       
             </div>
-            <div class="row mb-3">
+            <div class="row mb-4">
               <div class="col-md-6 col-sm-12">
                 <label>First Name</label>
                 <input type="text" class="form-control" name="firstname" placeholder="Enter First Name" required/>
@@ -75,7 +78,7 @@
               </div>
             </div>
       
-            <div class="row mb-3">
+            <div class="row mb-4">
               <div class="col-md-6 col-sm-12">
                 <label>Username</label>
                 <input type="text" class="form-control" name="username" placeholder="Enter Preffered Username" required/>
@@ -86,7 +89,7 @@
               </div>
             </div>
       
-            <div class="row mb-3">
+            <div class="row mb-4">
               <div class="col-md-6 col-sm-12">
                 <label>Email address</label>
                 <input type="email" class="form-control" name="email" placeholder="Enter email" required/>
@@ -98,7 +101,7 @@
             </div>
       
       
-            <div class="row mb-3">
+            <div class="row mb-4">
               <div class="col-md-6 col-sm-12">
                 <label>Password</label>
                 <input type="password" class="form-control" name="password" placeholder="Password" required/>
@@ -111,22 +114,21 @@
       
             <div class="row mb-3">
               <div class="col-md-6 col-sm-12">
-                <label>Most Preferred Language</label>
-                <select class="form-control" name="most_preferred_language" required>
-                  <option>Gender</option>
+                <label>Gender</label>
+                <select class="form-control" name="gender" required>
+                  <option>Select</option>
                   <option>Male</option>
                   <option>Female</option>
                   <option>Others</option>
                 </select>
-                <div class="form-group p-3 mr-5 m-1">
+                <div class="form-group mt-3">
                   <label>Upload Profile Picture</label>
                   <input type="file" class="form-control-file" name="profile_pix">
                 </div>
-      
-      
-                <button type="submit" class="btn btn-primary text-secondary" name="getstarted" onclick="showLoginModal()">Submit</button>
-      
               </div>
+
+
+
               <div class="col-md-6 col-sm-12">
                 <label>About Me</label>
                 <div class="form-group">
@@ -134,4 +136,7 @@
                 </div>
               </div>
             </div>
+          </fieldset>
+
+          </form>
   
