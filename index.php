@@ -1,65 +1,8 @@
+<?php include "loginsession.php" ?>
+<?php require "header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Chidinma Esther Muoghalu">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="estate, lakeview, landlord, tenants, events, activities">
-  <meta name="description" content="this is a web application for managing the laskeview estate">
-  <title>LakeViewEstate</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
-  <link rel="stylesheet" href="asset/css/lakeview.css">
-</head>
-
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <div class="container">
-      <a class="navbar-brand text-info" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto smooth-scroll">
-          <li class="nav-item">
-            <a class="nav-link mr-5 text-info" href="index.html">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-5 text-info" href="#about" data-offset="90">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-5 text-info" href="#features" data-offset="90">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-5 text-info" href="#services" data-offset="90">Services</a>
-          </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#opinions" data-offset="30">Login</a>
-            </li> -->
-          <li class="nav-item">
-            <a class="nav-link mr-5 text-info" href="dashboard.html" class="btn btn-default btn-rounded"
-              data-toggle="modal" data-target="#elegantModalForm" id="modal">Login</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link text-info" href="dashboard.html" data-offset="90">Dashboard</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link  text-info" href="#contact" data-offset="90">Contact Us</a>
-          </li>
-        </ul>
-        <!-- Social Icon  -->
-      </div>
-    </div>
-  </nav>
 
 
   <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-ride="carousel">
@@ -142,7 +85,7 @@
 
   </div>
 
-  <h1 style="text-align: center;" class="mt-5  pt-5">MEET THE EXECUTIVES</h1>
+  <h1 style="text-align: center;" class="mt-5  pt-5" id="about">MEET THE EXECUTIVES</h1>
   <div class="container contain mt-3">
     <div class="flip-card">
       <div class="flip-card-inner">
@@ -220,14 +163,7 @@
   </div>
 
 
-
-
-  <div class="footer">
-    <p>© 2020 Copyright: LakeViewEstate</p>
-  </div>
-
-
-  <!-- <?php require "footer.php" ?> -->
+  <?php require "footer.php" ?>
 
   </div>
 
@@ -265,37 +201,33 @@
                   class="blue-text ml-1">
                   Password?</a></p>
             </div>
-
             <div class="text-center mb-3">
-
-              <input type="submit" name="btn" class="btn btn-primary" value="Admin Login"><a href="dashboard.php"
-                class="p-3"><span class="text-white">
-                  <input type="submit" name="btn" class="btn btn-primary" value="Student Login"><a
-                    href="profilepage.html" class="p-3"></a></span>
-
-
-
+              <input type="submit" name="loginbtn" class="btn align-middle btn-primary" value="Login">
             </div>
+
 
             <div class="modal-footer mx-5 pt-3 mb-1">
               <p style="color: black">Not a member? SignUp As a</p>
-
-              <a href="landlordreg.html">Landlord</a> or <a href="tenantreg.html">Tenant</a>
+            
+                <a href="landlordreg.php">Landlord</a> or <a href="tenantreg.php">Tenant</a>
             </div>
 
-        </div>
+           
 
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          </div>
+          
+          
+          
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
           crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
           integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
           crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossorigin="anonymous"></script>
-</body>
+        </body>
 
 </html>
 </body>
