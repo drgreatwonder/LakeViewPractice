@@ -21,9 +21,9 @@ $sql = mysqli_query($conn, $query);
    $picture = "<img src='asset/".$row['profilepix']." alt='image'image'>";
    $address = $row['address'];
 
-   if(!isset($_SESSION['signed_in'])){
-    header("location:index.php");
- }
+//    if(!isset($_SESSION['signed_in'])){
+//     header("location:index.php");
+//  }
 
  
 ?>
